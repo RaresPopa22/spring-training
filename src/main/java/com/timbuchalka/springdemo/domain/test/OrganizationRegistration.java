@@ -5,6 +5,14 @@ public class OrganizationRegistration {
 	private String orgName;
 	private String country;
 	private String turnover;
+	private String type;
+	private String serviceLength;
+	private boolean registeredPreviously = true;
+	private String like;
+	private String [] optionalServices;
+	private String [] premiumServices;
+	private String overseasOperations;
+	private String employeeString;
 
 	public String getOrgName() {
 		return orgName;
@@ -28,5 +36,69 @@ public class OrganizationRegistration {
 
 	public void setTurnover(String turnover) {
 		this.turnover = turnover;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getServiceLength() {
+		return serviceLength;
+	}
+
+	public void setServiceLength(String serviceLength) {
+		this.serviceLength = serviceLength;
+	}
+
+	public boolean isRegisteredPreviously() {
+		return registeredPreviously;
+	}
+
+	public void setRegisteredPreviously(boolean registeredPreviously) {
+		this.registeredPreviously = registeredPreviously;
+	}
+
+	public String getLike() {
+		return like;
+	}
+
+	public void setLike(String like) {
+		this.like = like;
+	}
+
+	public String[] getOptionalServices() {
+		return optionalServices;
+	}
+
+	public void setOptionalServices(String[] optionalServices) {
+		this.optionalServices = optionalServices;
+	}
+
+	public String[] getPremiumServices() {
+		return premiumServices;
+	}
+
+	public void setPremiumServices(String[] premiumServices) {
+		this.premiumServices = premiumServices;
+	}
+
+	public String getOverseasOperations() {
+		return overseasOperations;
+	}
+
+	public void setOverseasOperations(String overseasOperations) {
+		this.overseasOperations = overseasOperations;
+	}
+
+	public String getEmployeeString() {
+		return employeeString;
+	}
+
+	public void setEmployeeString(String employeeString) {
+		this.employeeString = employeeString;
 	}
 }

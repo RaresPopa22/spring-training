@@ -33,7 +33,90 @@
 						</form:select>
 					</td>
 				</tr>
+				
+				<tr>
+					<td><form:label path="turnover">Turnover</form:label></td>
+					<td><form:select path="turnover" items="${turnoverlist}"/></td>
+				</tr>
+				
+				<tr>
+					<td><form:label path="type">Type</form:label></td>
+					<td>
+						<form:select path="type">
+							<form:option value="NONE">----SELECT----</form:option>
+							<form:options items="${typelist}"/>
+						</form:select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><form:label path="serviceLength">Organization Age</form:label></td>
+					<td><form:select path="serviceLength" items="${serviceLengthList}"/></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<form:label path="registeredPreviously">
+							Registered Previously?
+						</form:label>
+					</td>
+					<td>
+						<form:checkbox path="registeredPreviously" 
+									   items="${registeredPreviouslyList}"/>
+					</td>
+				</tr>
+				<tr>
+					<td><form:label path="like">Like our website?</form:label></td>
+					<td><form:checkbox path="like" value="yes"/>Like</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<form:label path="optionalServices">
+							Optional Services Subscriptions:
+						</form:label>
+					</td>
+					<td>
+						<form:checkbox path="optionalServices" value="emailService"/>
+							${subscriptionList.emailService}
+						<form:checkbox path="optionalServices" value="promotionalService"/>
+							${subscriptionList.promotionalService}
+						<form:checkbox path="optionalServices" value="newsLetterService"/>
+							${subscriptionList.newsLetterService}
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<form:label path="premiumServices">Premium Services</form:label>
+					</td>
+					<td>
+						<form:checkboxes path="premiumServices" items="${premiumServiceList}"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<form:label path="overseasOperations">Overseas Operations?</form:label>
+					</td>
+					<td>
+						<form:radiobutton path="overseasOperations" value="Yes"/>Yes
+						<form:radiobutton path="overseasOperations" value="No"/>No
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<form:label path="employeeString">Workforce Size</form:label>
+					</td>
+					<td>
+						<form:radiobuttons path="employeeString" items="${employeeStrengthList}"/>
+					</td>
+				</tr>
+								
+				<tr>
 					<td align="center"><input type="submit" value="Submit"/></td>
+				</tr>
 			</table>
 		</form:form>
 	</div>
